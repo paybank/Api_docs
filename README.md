@@ -10,9 +10,6 @@ Demo:https://demo.paybank.com/
 </head>
   
 
-var post_data = "";
-  var post_json = "";
-  var api_server = "server.php"; //demo php code   ->  editcode
 
   function paybank_pay(type,money,ename) {
       post_json = {
