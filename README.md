@@ -63,7 +63,8 @@ Parameters Description
 <tr>
 <td>sign</td>
 <td>Used for integrity verification, Querystring('AMOUNT=99.88&APPKEY=appKey&
-  CURRENCYTYPE=1&GOODSNAME=testName&MERCHANTORDERNUM=20190712001&QRCODETYPE=1&
+CURRENCYTYPE=1&GOODSNAME=testName&
+MERCHANTORDERNUM=20190712001&QRCODETYPE=1&
 TS='Date.parse(new Date())/1000'&APPSECRET=appSecret') string; 
 Note: Enter the variables in md5 in alphabetical order, as shown in the 
 example,Replace appSecret with the merchant's appSecret string
