@@ -27,8 +27,6 @@
 		a:active { color: #336699; font-weight: bold; font-size:12px; text-decoration: underline; }
 		a:hover { color: #cc3300; font-weight: bold; font-size:12px; text-decoration: underline; }
 		 .pay_button span:after { content: "»";position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s; } .pay_button:hover span { padding-right: 25px; } .pay_button:hover span:after { opacity: 1; right: 0;} 
-
-
     @keyframes blink {
       70% { color: transparent; }
     }
@@ -50,14 +48,13 @@
 					</ul>
 			</fieldset>
 		 </div>
-  <!-- iframe div -- >
+  <!-- iframe div -->
   <div id="paybank_window"></div> 
-  <!-- iframe div -- >
+  <!-- iframe div -->
   <script type="text/javascript">
   var post_data = "";
   var post_json = "";
   var api_server = "callback_server.php";
-
   function paybank_pay(type,money,ename) {
       post_json = {
             itemName:ename,
@@ -87,7 +84,6 @@
     $("#total_money").text(myId);
     $("#total_money").attr("style","text-align: center; animation: 1s blink 3 steps(1);");  
    }
-
   </script> 
 </body>
 </html>
