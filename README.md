@@ -76,6 +76,77 @@ example,Replace appSecret with the merchant's appSecret string
 
 </tbody>
 </table>
+Callback description
+The order payment was successful or cancelled for callback processing. If SUCCESS is returned, it means success. If it returns other results, it means failure. It will call back periodically within the specified time. If the callback result is still failed after the corresponding time and callback time, the callback will stop. If the callback is successful, the callback will not be processed.
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qrCodeType</td>
+<td>QR code type (fixed 1)</td>
+<td>Int</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>payOrderNum</td>
+<td>Platform order number</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>merchantOrderNum</td>
+<td>Merchant order number</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>goodsName</td>
+<td>product name</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>currencyType</td>
+<td>Merchant order number</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>QR code type (fixed 1)</td>
+<td>Int</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>ts</td>
+<td>Current timestamp (seconds)</td>
+<td>Long</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>Signature (data signature verification use) Example: 
+md5(AMOUNT=99.88&APPKEY=appKey&CURRENCYTYPE=1&
+GOODSNAME=testName&MERCHANTORDERNUM=20190712001&
+PAYORDERNUM=20190712001&QRCODETYPE=1&
+TS=Date.parse(new Date())/1000&APPSECRET=appSecret).toUpCase()
+
+</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+
+</tbody>
+</table>
+
 
 
 
