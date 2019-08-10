@@ -11,11 +11,12 @@ Demo:https://demo.paybank.com/
   
 
 
-  function paybank_pay(type,money,ename) {
-      post_json = {
+    var api_server = server.php
+    
+    var post_json = {
             itemName:ename,
             price:money
-    };
+    }
     
     $.post(api_server,post_json,
         function(data,status){
