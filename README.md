@@ -171,7 +171,7 @@ TS=Date.parse(new Date())/1000&APPSECRET=appSecret).toUpCase()
 --head--
   
 --body--
-
+    <div id="paybank_window"></div>
     var api_server = 'callback_server.php';   //localcode 
     
     var post_json = {
