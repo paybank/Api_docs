@@ -9,7 +9,7 @@ Demo:https://demo.paybank.com/
   <script src="https://www.paybank.com/payserver/payment.min.js"></script>
 </head>
   
-<script language="javascript"> 
+
 var post_data = "";
   var post_json = "";
   var api_server = "server.php"; //demo php code   ->  editcode
@@ -33,4 +33,4 @@ var post_data = "";
        });
     }
     
-</script> 
+
