@@ -20,43 +20,43 @@ Parameters Description
 <tbody>
 <tr>
 <td>amount</td>
-<td>Legal currency amount (up to 2 decimal places)
-</td>
+<td>Legal currency amount (up to 2 decimal places)</td>
 <td>BigDecimal</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>appKey</td>
-<td>Legal currency amount (up to 2 decimal places)
-</td>
-<td>BigDecimal</td>
+<td>API(APP) Access Key appSecret</td>
+<td>String</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>currencyType</td>
-<td>Legal currency amount (up to 2 decimal places)
-</td>
+<td>French currency type (1: CNY 2: USD 3: KWR)</td>
+<td>Int</td>
+<td>Yes</td>
+</tr>
+<tr>
 <td>goodsName</td>
+<td>product name</td>
+<td>String</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>merchantOrderNum</td>
-<td>Merchant order number
-</td>
+<td>Merchant order number</td>
 <td>String</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>qrCodeType</td>
-<td>QR code type (fixed 1)
-</td>
+<td>QR code type (fixed 1)</td>
 <td>Int</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>ts</td>
-<td>Current timestamp (seconds)
-</td>
+<td>Current timestamp (seconds)</td>
 <td>Long</td>
 <td>Yes</td>
 </tr>
