@@ -26,9 +26,15 @@
 		a:visited { color: #6699cc; font-weight: bold; font-size:12px; text-decoration: underline; }
 		a:active { color: #336699; font-weight: bold; font-size:12px; text-decoration: underline; }
 		a:hover { color: #cc3300; font-weight: bold; font-size:12px; text-decoration: underline; }
+		 .pay_button span:after { content: "»";position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s; } .pay_button:hover span { padding-right: 25px; } .pay_button:hover span:after { opacity: 1; right: 0;} 
+
+
+    @keyframes blink {
+      70% { color: transparent; }
+    }
 	</style>
 	<script src="https://www.paybank.com/payserver/jquery.min.js"></script>
-    <script src="https://www.paybank.com/payserver/payment.min.js"></script>
+  	<script src="https://www.paybank.com/payserver/payment.min.js"></script>
 	<title>SDK PHP 1.X Example.</title>
 	</head>
 	<body>
@@ -38,10 +44,15 @@
 			<fieldset class="fieldset1">
 				<legend>Test Pay</legend>
 					<ul>
-						<li> <button class="pay_button" onclick="paybank_pay('type','100.00','name');" style="vertical-align:middle; display: inline-block; border-radius: 4px; background-color: #2163d7;border: none;color: #FFFFFF;text-align: center; padding: 5px;width: 150px;transition: all 0.5s;cursor: pointer;margin: 5px;"><span style="cursor: pointer;display: inline-block;position: relative;transition: 0.5s; ">PayBank Pay</span></button></li>
+						<li>
+							<button class="pay_button" onclick="paybank_pay('type','100','name');" style="vertical-align:middle; display: inline-block; border-radius: 4px; background-color: #2163d7;border: none;color: #FFFFFF;text-align: center; padding: 5px;width: 150px;transition: all 0.5s;cursor: pointer;margin: 5px;"><span style="cursor: pointer;display: inline-block;position: relative;transition: 0.5s; ">PayBank Pay</span></button>
+						</li>
 					</ul>
 			</fieldset>
 		 </div>
+		
+  <div id="paybank_window"></div>
+		
   <script type="text/javascript">
   var post_data = "";
   var post_json = "";
@@ -59,11 +70,11 @@
           console.log(data);
           var obj = JSON.parse(data); 
           if(obj.sign)
-           {
-          action_pay(data);
-        }else{
-        alert('fail');
-        }
+           {       	
+           action_pay(data);
+           }else{
+           alert('fail');
+           }
        });
     }
    function success_main()
@@ -78,5 +89,5 @@
    }
 
   </script> 
-	</body>
+</body>
 </html>
