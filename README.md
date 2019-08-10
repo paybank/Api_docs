@@ -75,6 +75,7 @@ example,Replace appSecret with the merchant's appSecret string
 </tbody>
 </table>
 # Callback description
+
 The order payment was successful or cancelled for callback processing. If SUCCESS is returned, it means success. If it returns other results, it means failure. It will call back periodically within the specified time. If the callback result is still failed after the corresponding time and callback time, the callback will stop. If the callback is successful, the callback will not be processed.
 
 
@@ -156,7 +157,7 @@ TS=Date.parse(new Date())/1000&APPSECRET=appSecret).toUpCase()
 
 
 
-Sample Response
+# Sample Response
 
 
 
