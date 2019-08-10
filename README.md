@@ -77,6 +77,7 @@ example,Replace appSecret with the merchant's appSecret string
 # Callback description
 The order payment was successful or cancelled for callback processing. If SUCCESS is returned, it means success. If it returns other results, it means failure. It will call back periodically within the specified time. If the callback result is still failed after the corresponding time and callback time, the callback will stop. If the callback is successful, the callback will not be processed.
 
+
 <table>
 <thead>
 <tr>
@@ -113,20 +114,26 @@ The order payment was successful or cancelled for callback processing. If SUCCES
 </tr>
 <tr>
 <td>currencyType</td>
-<td>Merchant order number</td>
-<td>String</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>amount</td>
-<td>QR code type (fixed 1)</td>
+<td>French currency type (1:CNY 2:USD 3：KWR)</td>
 <td>Int</td>
 <td>Yes</td>
 </tr>
 <tr>
+<td>amount</td>
+<td>Legal currency amount (up to 2 decimal places)</td>
+<td>BigDecimal</td>
+<td>Yes</td>
+</tr>
+<tr>
 <td>ts</td>
-<td>Current timestamp (seconds)</td>
+<td>Timestamp (seconds)</td>
 <td>Long</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>appKey</td>
+<td>User requested key</td>
+<td>String</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -144,6 +151,8 @@ TS=Date.parse(new Date())/1000&APPSECRET=appSecret).toUpCase()
 
 </tbody>
 </table>
+
+
 
 
 
