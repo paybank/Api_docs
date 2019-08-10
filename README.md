@@ -11,6 +11,7 @@ Payment System Api
   
 
 
+<body>
     var api_server = 'server.php';   //localcode 
     
     var post_json = {
@@ -31,6 +32,6 @@ Payment System Api
         }
        });
     }
-    
+  </body>  
 
 Demo:https://demo.paybank.com/
