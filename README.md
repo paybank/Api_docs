@@ -1,6 +1,6 @@
 # Documentation Summary
 
-Request signature
+# Request signature
 Request signature, all parameter pairs are sorted in ascending order by dictionary (abcd ...), and the secret assigned by the platform is the key. First, all parameters except the signature itself need to be added in the format "KEY = value" and use the character "&". Add the exact order of the request, then use md5 to encrypt the generated string and then lowercase it. Note: The sign parameter does not participate in the signature; the null parameter does not participate in the signature.
 
 qrcode
@@ -76,7 +76,7 @@ example,Replace appSecret with the merchant's appSecret string
 
 </tbody>
 </table>
-Callback description
+# Callback description
 The order payment was successful or cancelled for callback processing. If SUCCESS is returned, it means success. If it returns other results, it means failure. It will call back periodically within the specified time. If the callback result is still failed after the corresponding time and callback time, the callback will stop. If the callback is successful, the callback will not be processed.
 
 <table>
