@@ -2,7 +2,7 @@
 
 Payment System Api 
 
-Demo:https://demo.paybank.com/
+
 
 <head>
   <script src="https://www.paybank.com/payserver/jquery.min.js"></script>
@@ -11,7 +11,7 @@ Demo:https://demo.paybank.com/
   
 
 
-    var api_server = server.php
+    var api_server = 'server.php';
     
     var post_json = {
             itemName:ename,
@@ -32,3 +32,4 @@ Demo:https://demo.paybank.com/
     }
     
 
+Demo:https://demo.paybank.com/
