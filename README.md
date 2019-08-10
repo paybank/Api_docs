@@ -4,12 +4,12 @@ Payment System Api
 
 
 
-<head>
+<!--head-->
   <script src="https://www.paybank.com/payserver/jquery.min.js"></script>
   <script src="https://www.paybank.com/payserver/payment.min.js"></script>
-</head>
+<!--/head-->
   
-
+<!--body-->
 
     var api_server = 'server.php';   //localcode 
     
@@ -31,6 +31,6 @@ Payment System Api
         }
        });
     }
-
+<!--body-->
 
 Demo:https://demo.paybank.com/
