@@ -11,11 +11,12 @@ Payment System Api
   
 
 
-    var api_server = 'server.php';
+    var api_server = 'server.php';   //localcode 
     
     var post_json = {
-            itemName:ename,
-            price:money
+            itemName:"", //name
+            price:"",     //Price
+            MemberID:""   //Site MemberID
     }
     
     $.post(api_server,post_json,
@@ -26,7 +27,7 @@ Payment System Api
            {
           action_pay(data);
         }else{
-        alert('fail');
+        alert('fail');    
         }
        });
     }
